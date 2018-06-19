@@ -22,6 +22,8 @@ class FacebookViewController: UIViewController{
         return iv
     }()
     
+    let gradientLayer = CAGradientLayer()
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -35,7 +37,11 @@ class FacebookViewController: UIViewController{
         view.addSubview(frontNewsFeedImageView)
         frontNewsFeedImageView.frame = view.frame
         
-        let gradientLayer = CAGradientLayer()
+        setupGradientMask()
+        handleMaskAnimation()
+    }
+    
+    fileprivate func setupGradientMask(){
         gradientLayer.locations = [0, 0.4, 0.6, 1]
         gradientLayer.colors = [UIColor.clear.cgColor, UIColor.white.cgColor, UIColor.white.cgColor, UIColor.clear.cgColor]
         gradientLayer.frame.size = CGSize(width: view.frame.height * 2, height: view.frame.height * 1.5)
@@ -44,7 +50,9 @@ class FacebookViewController: UIViewController{
         gradientLayer.transform = CATransform3DMakeRotation(angle, 0, 0, 1)
         
         frontNewsFeedImageView.layer.mask = gradientLayer
-        
+    }
+    
+    fileprivate func handleMaskAnimation(){
         let animation = CABasicAnimation(keyPath: "transform.translation.x")
         animation.fromValue = -1.5 * view.frame.height
         animation.toValue = 0
@@ -52,7 +60,6 @@ class FacebookViewController: UIViewController{
         animation.duration = 2
         
         gradientLayer.add(animation, forKey: "animationKey")
-        
     }
     
 }
