@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1403232520D631980077B1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403232420D631980077B1DF /* AppDelegate.swift */; };
-		1403232720D631980077B1DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403232620D631980077B1DF /* ViewController.swift */; };
+		1403232720D631980077B1DF /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1403232620D631980077B1DF /* TextViewController.swift */; };
 		1403232A20D631980077B1DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1403232820D631980077B1DF /* Main.storyboard */; };
 		1403232C20D631980077B1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1403232B20D631980077B1DF /* Assets.xcassets */; };
 		1403232F20D631980077B1DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1403232D20D631980077B1DF /* LaunchScreen.storyboard */; };
+		145FD97520D7AA050057B4BB /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FD97420D7AA050057B4BB /* FacebookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1403232120D631980077B1DF /* FacebookShimmerGradient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookShimmerGradient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1403232420D631980077B1DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1403232620D631980077B1DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1403232620D631980077B1DF /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1403232920D631980077B1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1403232B20D631980077B1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1403232E20D631980077B1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1403233020D631980077B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145FD97420D7AA050057B4BB /* FacebookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,9 @@
 		1403232320D631980077B1DF /* FacebookShimmerGradient */ = {
 			isa = PBXGroup;
 			children = (
+				145FD97420D7AA050057B4BB /* FacebookViewController.swift */,
+				1403232620D631980077B1DF /* TextViewController.swift */,
 				1403232420D631980077B1DF /* AppDelegate.swift */,
-				1403232620D631980077B1DF /* ViewController.swift */,
 				1403232820D631980077B1DF /* Main.storyboard */,
 				1403232B20D631980077B1DF /* Assets.xcassets */,
 				1403232D20D631980077B1DF /* LaunchScreen.storyboard */,
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1403232720D631980077B1DF /* ViewController.swift in Sources */,
+				1403232720D631980077B1DF /* TextViewController.swift in Sources */,
 				1403232520D631980077B1DF /* AppDelegate.swift in Sources */,
+				145FD97520D7AA050057B4BB /* FacebookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
